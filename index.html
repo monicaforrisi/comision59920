@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gastronomia, proyecto Monica Forrisi</title>
+        <!-- favicon  -->
+		<link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+        <!-- google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- font awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!-- main style -->
+<link rel="stylesheet" href="./css/styles.css"> 
+</head>
+    <body><!-- control + k + c shortcut para  generar comentario en visual studio code -->
+        <aside></aside><!-- se usa para cosas externas no relacionadas con el sitio, ej publicidad -->
+        <header>
+            <div class="cabezal wrapper">
+                <nav class="menu-nav">
+                    <div class="menu-hamburguesa" id="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="menu" id="menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="./pages/enviatureceta.html">Envianos tu receta</a></li>
+                        <li><a href="./pages/categoria.html">Recetas por sección</a></li>
+                        <li><a href="./pages/cocineros.html">Nosotros</a></li>
+                        <li><a href="./pages/contacto.html">Contacto</a></li>
+
+                    </ul>
+                </nav>
+                <div class="logo"><img src="./assets/img/logo.svg" alt="Gastronomia" width="350"></div>
+                    
+ 
+                <div class="dosbotones">
+                        <a href="./pages/receta.html">
+                            <a href="./pages/categoria.html"><img src="./assets/img/btn_recetasporseccion_1.svg" alt="recetas por seccion" width="180"></a> 
+                        <a href="./pages/enviatureceta.html"><img src="./assets/img/btn_buscador.svg" alt="buscador" width="180"></a>
+                   </div>
+
+     
+               
+                 </div>
+         </header>
+         
+         <main>
+
+<!-- banner ini -->
+         <section class="bannerPpal wrapper">
+ 				    <div><img src="./assets/img/fondobanner2.png" alt="imagen de citricos"></div>
+						<div class="titular"><h1><strong>TEMPORADA</strong><br> DE CÍTRICOS</h1>
+                            <p class="h2 text-colorSecundario margin-t-20"> Fuente natural de vitamina C, tan necesaria en invierno para combatir gripes y resfríos, los cítricos están en su temporada.</p>
+                            <a class="arrow-link" href="./pages/receta.html">Ver recetas<span class="arrow"></span></a></div>
+           </section>    
+ <!-- banner fin -->
+
+
+ <!-- carrousel ini --> 
+          <section id="carousel1" class="wrapper carrousel">
+            <h2 class="heading"><strong>recomendados</strong> del chef</h2>
+
+
+            <div class="carousel-container">
+                <button class="prev" onclick="prevSlide('carousel1')"><i class="fa-solid fa-arrow-left"></i></button>
+                <div class="carousel">
+                    <div class="card carousel-item">	
+                        <article>
+                        <img src="./assets/img/cheesecake.jpg" alt="Cheesecake de frutos rojos">
+
+                       <h3 class="text-colorPrimario margin-t-10 margin-b-20">Cheesecake de frutos rojos</h3>
+                        <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                           <i class="fa-solid fa-share-nodes"></i>
+                           <i class="fa-solid fa-bookmark"></i>
+                           </div>
+                       <p class="margin-t-20">Este postre cada vez más popular es de muy facil elaboracion. CasanCrem va con todo!</p>       
+                       <div class="grid-recipe-dif margin-t-20">
+                           <div><i class="fa-regular fa-clock"></i>
+                               <br>30 minutos</div>
+                           <div><i class="fa-regular fa-user"></i>
+                               <br>4 personas</div>
+                       </div> 
+                   </article></div>
+                    <div class="card carousel-item"><article>
+                        <img src="./assets/img/risotto.jpg" alt="Cheesecake de frutos rojos">
+
+                       <h3 class="text-colorPrimario margin-t-10 margin-b-20">Risotto de calabaza y vegetales</h3>
+                       <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                           <i class="fa-solid fa-share-nodes"></i>
+                           <i class="fa-solid fa-bookmark"></i>
+                           </div>
+                       <p class="margin-t-20">Un postre calentito y facil de hacer, con las verduras que tengas.</p>       
+                       <div class="grid-recipe-dif margin-t-20">
+                           <div><i class="fa-regular fa-clock"></i>
+                               <br>30 minutos</div>
+                           <div><i class="fa-regular fa-user"></i>
+                               <br>4 personas</div>
+                       </div> 
+
+                   </article></div>
+                    <div class="card carousel-item"><article>
+                        <img src="./assets/img/ensalada.jpg" alt="Cheesecake de frutos rojos">
+                       <h3 class="text-colorPrimario margin-t-20 margin-b-10">Ensalada de verdes con remolacha</h3>
+                       <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                           <i class="fa-solid fa-share-nodes"></i>
+                           <i class="fa-solid fa-bookmark"></i>
+                           </div>
+                       <p class="margin-t-20">Este postre cada vez más popular es de muy facil elaboracion.</p>       
+                       <div class="grid-recipe-dif margin-t-20">
+                           <div><i class="fa-regular fa-clock"></i>
+                               <br>30 minutos</div>
+                           <div><i class="fa-regular fa-user"></i>
+                               <br>4 personas</div>
+                       </div> 
+
+                   </article></div>
+                    <div class="card carousel-item"><article>
+                        <img src="./assets/img/limonada.jpg" alt="Cheesecake de frutos rojos">
+                       <h3 class="text-colorPrimario margin-t-20 margin-b-10">Limonada de jengibre menta y kiwi</h3>
+                       <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                           <i class="fa-solid fa-share-nodes"></i>
+                           <i class="fa-solid fa-bookmark"></i>
+                           </div>
+                       <p class="margin-t-20">Este postre cada vez más popular es de muy facil elaboracion.</p>       
+                       <div class="grid-recipe-dif margin-t-20">
+                           <div><i class="fa-regular fa-clock"></i>
+                               <br>30 minutos</div>
+                           <div><i class="fa-regular fa-user"></i>
+                               <br>4 personas</div>
+                       </div> 
+
+                   </article></div> 
+                    <div class="card carousel-item"><article>
+                        <img src="./assets/img/sopa.jpg" alt="sopa">
+                       <h3 class="text-colorPrimario margin-t-20 margin-b-10">Sopa de calabaza y zanahoria</h3>
+                       <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                           <i class="fa-solid fa-share-nodes"></i>
+                           <i class="fa-solid fa-bookmark"></i>
+                           </div>
+                       <p class="margin-t-20">Esta sopa cada vez más popular es de muy facil elaboracion.</p>       
+                       <div class="grid-recipe-dif margin-t-20">
+                           <div><i class="fa-regular fa-clock"></i>
+                               <br>30 minutos</div>
+                           <div><i class="fa-regular fa-user"></i>
+                               <br>4 personas</div>
+                       </div> 
+
+                   </article></div>
+                    <div class="card carousel-item"><article>
+                        <img src="./assets/img/licuado.jpg" alt="licuado">
+                       <h3 class="text-colorPrimario margin-t-20 margin-b-10">Licuado de frutillas y frambuesas</h3>
+                       <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                           <i class="fa-solid fa-share-nodes"></i>
+                           <i class="fa-solid fa-bookmark"></i>
+                           </div>
+                       <p class="margin-t-20">Esta sopa cada vez más popular es de muy facil elaboracion.</p>       
+                       <div class="grid-recipe-dif margin-t-20">
+                           <div><i class="fa-regular fa-clock"></i>
+                               <br>30 minutos</div>
+                           <div><i class="fa-regular fa-user"></i>
+                               <br>4 personas</div>
+                       </div> 
+
+                   </article></div>
+                    <div class="card carousel-item"><article>
+                        <img src="./assets/img/crumble.jpg" alt="crumble">
+                       <h3 class="text-colorPrimario margin-t-20 margin-b-10">Crumble de manzana</h3>
+                       <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                           <i class="fa-solid fa-share-nodes"></i>
+                           <i class="fa-solid fa-bookmark"></i>
+                           </div>
+                       <p class="margin-t-20">Esta sopa cada vez más popular es de muy facil elaboracion.</p>       
+                       <div class="grid-recipe-dif margin-t-20">
+                           <div><i class="fa-regular fa-clock"></i>
+                               <br>30 minutos</div>
+                           <div><i class="fa-regular fa-user"></i>
+                               <br>4 personas</div>
+                       </div> 
+
+                   </article></div>
+                    <div class="card carousel-item"><article>
+                        <img src="./assets/img/guacamole.jpg" alt="guacamole">
+                       <h3 class="text-colorPrimario margin-t-20 margin-b-10">Guacamole</h3>
+                       <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                           <i class="fa-solid fa-share-nodes"></i>
+                           <i class="fa-solid fa-bookmark"></i>
+                           </div>
+                       <p class="margin-t-20">Esta sopa cada vez más popular es de muy facil elaboracion.</p>       
+                       <div class="grid-recipe-dif margin-t-20">
+                           <div><i class="fa-regular fa-clock"></i>
+                               <br>30 minutos</div>
+                           <div><i class="fa-regular fa-user"></i>
+                               <br>4 personas</div>
+                       </div> 
+
+                   </article></div>
+                </div>
+                <button class="next" onclick="nextSlide('carousel1')"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+  
+        </section>
+ <!-- carrousel fin --> 
+
+
+ <!-- SUSCRIBE ini --> 
+<section>
+    <div class="grid-suscribir">
+        <div class="suscribir-item col1"><img src="assets/img/sopa.jpg"></div>
+        <div class="suscribir-item col2"><img src="assets/img/tomate.jpg"></div>
+        <div class="suscribir-item col3"><img src="assets/img/cheesecake.jpg"></div>
+        <div class="suscribir-item col4"><img src="assets/img/crumble.jpg"></div>
+        <div class="suscribir-item col5"><img src="assets/img/guacamole.jpg"></div>
+        <div class="suscribir-item col6"><img src="assets/img/licuado.jpg"></div>
+        <div class="suscribir-item col7"><img src="assets/img/banan.jpg"></div>
+        <div class="suscribir-item col8"><img src="assets/img/ensalada.jpg"></div>
+         <div class="suscribir-item grande"><p class="h3"><strong>Recibí en tu mail</strong>  
+            recetas, reseñas y recomendaciones del mundo foodie<br> <br>
+            <button href="#">Suscribite</button> </p></div>
+
+    </div>
+</section>
+ <!-- SUSCRIBE fin --> 
+
+
+ <!-- recetas por categoria  ini --> 
+<section class="wrapper">            
+    <h2 class="heading"><strong>recetas</strong> por categoría</h2>
+<div class="grid-categoria">
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_frutas.svg"></div>Frutas</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_carnes.svg"></div>Carnes</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_bebidas.svg"></div>Bebidas</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_ensaladas.svg"></div>Ensaladas</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_dulces.svg"></div>Postres y golosinas</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_light.svg"></div>Recetas light</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_guisos.svg"></div>Guisos y cazuelas</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_bebes.svg"></div>Para bebés</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_sinazucar.svg"></div>Sin azúcar</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_sopas.svg"></div>Sopas</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_desayunos.svg"></div>Desayunos y meriendas</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_utiles.svg"></div>Utiles</div>
+</div>
+</section>
+ <!-- recetas por categoria  fin --> 
+
+
+
+ <!-- carrousel 3 elementos ini-->
+  
+ <section id="carousel2" class="wrapper carrousel">
+    <h2 class="heading"><strong>de</strong> estación</h2>
+
+
+    <div class="carousel-container">
+        <button class="prev" onclick="prevSlide('carousel2')"><i class="fa-solid fa-arrow-left"></i></button>
+        <div class="carousel">
+            <div class="card carousel-item">	
+                <article>
+                <img src="./assets/img/cheesecake.jpg" alt="Cheesecake de frutos rojos">
+
+               <h3 class="text-colorPrimario margin-t-10 margin-b-20">Cheesecake de frutos rojos</h3>
+                <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                   <i class="fa-solid fa-share-nodes"></i>
+                   <i class="fa-solid fa-bookmark"></i>
+                   </div>
+               <p class="margin-t-20">Este postre cada vez más popular es de muy facil elaboracion. CasanCrem va con todo!</p>       
+               <div class="grid-recipe-dif margin-t-20">
+                   <div><i class="fa-regular fa-clock"></i>
+                       <br>30 minutos</div>
+                   <div><i class="fa-regular fa-user"></i>
+                       <br>4 personas</div>
+               </div> 
+           </article></div>
+            <div class="card carousel-item"><article>
+                <img src="./assets/img/risotto.jpg" alt="Risotto de calabaza y vegetales">
+
+               <h3 class="text-colorPrimario margin-t-10 margin-b-20">Risotto de calabaza y vegetales</h3>
+               <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                   <i class="fa-solid fa-share-nodes"></i>
+                   <i class="fa-solid fa-bookmark"></i>
+                   </div>
+               <p class="margin-t-20">Un postre calentito y facil de hacer, con las verduras que tengas.</p>       
+               <div class="grid-recipe-dif margin-t-20">
+                   <div><i class="fa-regular fa-clock"></i>
+                       <br>30 minutos</div>
+                   <div><i class="fa-regular fa-user"></i>
+                       <br>4 personas</div>
+               </div> 
+
+           </article></div>
+            <div class="card carousel-item"><article>
+                <img src="./assets/img/ensalada.jpg" alt="Ensalada de verdes con remolacha<">
+               <h3 class="text-colorPrimario margin-t-20 margin-b-10">Ensalada de verdes con remolacha</h3>
+               <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                   <i class="fa-solid fa-share-nodes"></i>
+                   <i class="fa-solid fa-bookmark"></i>
+                   </div>
+               <p class="margin-t-20">Este postre cada vez más popular es de muy facil elaboracion.</p>       
+               <div class="grid-recipe-dif margin-t-20">
+                   <div><i class="fa-regular fa-clock"></i>
+                       <br>30 minutos</div>
+                   <div><i class="fa-regular fa-user"></i>
+                       <br>4 personas</div>
+               </div> 
+
+           </article></div>
+            <div class="card carousel-item"><article>
+                <img src="./assets/img/limonada.jpg" alt="Limonada de jengibre">
+               <h3 class="text-colorPrimario margin-t-20 margin-b-10">Limonada de jengibre menta y kiwi</h3>
+               <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                   <i class="fa-solid fa-share-nodes"></i>
+                   <i class="fa-solid fa-bookmark"></i>
+                   </div>
+               <p class="margin-t-20">Este postre cada vez más popular es de muy facil elaboracion.</p>       
+               <div class="grid-recipe-dif margin-t-20">
+                   <div><i class="fa-regular fa-clock"></i>
+                       <br>30 minutos</div>
+                   <div><i class="fa-regular fa-user"></i>
+                       <br>4 personas</div>
+               </div> 
+
+           </article></div> 
+            <div class="card carousel-item"><article>
+                <img src="./assets/img/sopa.jpg" alt="sopa">
+               <h3 class="text-colorPrimario margin-t-20 margin-b-10">Sopa de calabaza y zanahoria</h3>
+               <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                   <i class="fa-solid fa-share-nodes"></i>
+                   <i class="fa-solid fa-bookmark"></i>
+                   </div>
+               <p class="margin-t-20">Esta sopa cada vez más popular es de muy facil elaboracion.</p>       
+               <div class="grid-recipe-dif margin-t-20">
+                   <div><i class="fa-regular fa-clock"></i>
+                       <br>30 minutos</div>
+                   <div><i class="fa-regular fa-user"></i>
+                       <br>4 personas</div>
+               </div> 
+
+           </article></div>
+            <div class="card carousel-item"><article>
+                <img src="./assets/img/licuado.jpg" alt="licuado">
+               <h3 class="text-colorPrimario margin-t-20 margin-b-10">Licuado de frutillas y frambuesas</h3>
+               <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                   <i class="fa-solid fa-share-nodes"></i>
+                   <i class="fa-solid fa-bookmark"></i>
+                   </div>
+               <p class="margin-t-20">Esta sopa cada vez más popular es de muy facil elaboracion.</p>       
+               <div class="grid-recipe-dif margin-t-20">
+                   <div><i class="fa-regular fa-clock"></i>
+                       <br>30 minutos</div>
+                   <div><i class="fa-regular fa-user"></i>
+                       <br>4 personas</div>
+               </div> 
+
+           </article></div>
+            <div class="card carousel-item"><article>
+                <img src="./assets/img/crumble.jpg" alt="Crumble de manzana">
+               <h3 class="text-colorPrimario margin-t-20 margin-b-10">Crumble de manzana</h3>
+               <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                   <i class="fa-solid fa-share-nodes"></i>
+                   <i class="fa-solid fa-bookmark"></i>
+                   </div>
+               <p class="margin-t-20">Esta sopa cada vez más popular es de muy facil elaboracion.</p>       
+               <div class="grid-recipe-dif margin-t-20">
+                   <div><i class="fa-regular fa-clock"></i>
+                       <br>30 minutos</div>
+                   <div><i class="fa-regular fa-user"></i>
+                       <br>4 personas</div>
+               </div> 
+
+           </article></div>
+ 
+        </div>
+        <button class="next" onclick="nextSlide('carousel2')"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+</section>
+ 
+<!-- carrousel 3 elementso fin -->
+
+
+
+
+
+
+<!-- count up  ini --> 
+<section class="bgcounter">
+    <div class="counter-section wrapper">
+        <div id="counter1" class="counter">0</div>
+        <div id="counter2" class="counter">0</div>
+        <div id="counter3" class="counter">0</div>
+    </div></section>
+ <!-- count up  fin -->
+  
+ 
+ 
+          
+        </main>
+
+        <footer>
+            <div class="wrapper">
+              <div class="footer2cols">  
+                <div>  <ul>
+                    <li><a href="./pages/cocineros.html">Quiénes somos</a></li> 
+                    <li><a href="./pages/categoria.html">Recetas</a></li>
+                    <li><a href="#">Buscador</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="./pages/enviatureceta.html">Envianos tu receta</a></li>
+                    <li><a href="./pages/receta.html">Videos</a></li></ul></div>
+                    <div><h4>Seguinos en&nbsp;&nbsp; <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                      &nbsp;&nbsp;  <a href=""><i class="fa-brands fa-x"></i></a>  &nbsp;&nbsp;  
+                      <a href=""><i class="fa-brands fa-instagram"></i></a>&nbsp;&nbsp; 
+                      
+                      <a href=""><i class="fa-brands fa-youtube"></i></a>&nbsp;&nbsp; 
+                      <a href=""><i class="fa-brands fa-tiktok"></i></a>&nbsp;&nbsp; 
+
+                      <a href=""><i class="fa-brands fa-twitch"></i></a>
+
+                    </h4></div>
+        </div>
+        
+                <hr class="margin-t-20">
+        <p class="small margin-t-20">Copyright Derechos reservados. Mónica Forrisi / Coderhouse</p>
+        
+    </div>
+
+            
+            
+            </footer>
+            <script src="scripts/script.js"></script>
+
+    </body>
+</html>
