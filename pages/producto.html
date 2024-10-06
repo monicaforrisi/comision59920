@@ -1,0 +1,404 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Gastronomia, proyecto Monica Forrisi</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+
+        <!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+       <!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+<!-- Core theme CSS (includes Bootstrap)-->
+        <link href="https://startbootstrap.github.io/startbootstrap-shop-homepage/css/styles.css" rel="stylesheet" />
+        <!-- main style -->
+<link rel="stylesheet" href="../css/styles.css"> 
+
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-secundario">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.svg" width="220"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="tienda.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="receta.html">Recetas</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#!">Todos los productos</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="#!">Utensilios</a></li>
+                                <li><a class="dropdown-item" href="#!">Ollas y sartenes</a></li>
+                                <li><a class="dropdown-item" href="#!">Cuchillería</a></li>
+                                <li><a class="dropdown-item" href="#!">Recién llegados</a></li>
+                                <li><a class="dropdown-item" href="#!">Recién llegados</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+         
+       <!-- Product section-->
+       <section class="py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="../assets/img/tienda/batidora.png" alt="..." /></div>
+                <div class="col-md-6">
+                    <div class="small mb-1">CAT: Batidoras, Electrodomésticos</div>
+                    <h1 class="display-5 fw-bolder">Batidora Artisan Hibiscus </h1>
+                    <div class="fs-5 mb-2 mt-2">
+                         <h3>$ 38.500</h3>
+                    </div>
+
+                    <div class="colores mb-2 mt-5">
+                        <p>Colores disponibles:</p>
+                        <div class="rojo"></div>
+                        <div class="celeste"></div>
+                        <div class="rosado"></div>
+                    </div>
+                    <div class="py-4"><i class="fa-solid fa-truck-fast"></i>  &nbsp;&nbsp;<strong>Envío gratis</strong> en 2 horas</div>
+                    
+                    <p><img src="../assets/img/tienda/logo_kitchenaid.svg"></p>
+                    <p class="lead">Abre las puertas a la era de la audacia y la belleza. Al igual que la flor a la que rinde tributo, este exuberante tono rosa será el centro de todas las miradas. Es lo que tu cocina y tus recetas llevaban tiempo esperando. Dale la bienvenida a Hibiscus.</p>
+                    <div class="d-flex">
+                        <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                        <button class="btn btn-primary btn-tienda flex-shrink-0" type="button">
+                            <i class="bi-cart-fill me-1"></i>
+                            Agregar al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Related items section-->
+   
+    <section class="py-5">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+              <div class="col-md-6"><h4>Imágenes del producto</h4> <div id="carouselExampleInterval" class="carousel slide margin-t-20" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="../assets/img/tienda/galeria01.avif" class="d-block w-100" alt="galeria">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../assets/img/tienda/galeria02.avif" class="d-block w-100" alt="galeria">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../assets/img/tienda/galeria03.avif" class="d-block w-100" alt="galeria">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../assets/img/tienda/galeria04.avif" class="d-block w-100" alt="galeria">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../assets/img/tienda/galeria05.avif" class="d-block w-100" alt="galeria">
+                  </div>
+               
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div></div>
+              <div class="col-md-6"><h4>Especificaciones</h4>
+                <table class="table table-striped table-hover border margin-t-20">
+                   
+                      <tbody>
+                        <tr>
+                          <th scope="row">Condicion del producto</th>
+                          <td>Nuevo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Potencia</th>
+                          <td>325 W
+                        </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Modelo</th>
+                          <td>5KSM175PSEMS
+                        </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">País de origen</th>
+                            <td>Estados Unidos
+                          </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">Garantía del proveedor</th>
+                            <td>12 Meses
+                          </td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">Material de Electrodomésticos</th>
+                            <td>Acero inoxidable,Acero inoxidable,Acero inoxidable</td>
+                          </tr>
+                          
+
+                        </tbody>
+                  </table>
+            </div>
+            </div></div>
+    </section>
+    <section class="py-5 bg-light">
+        <div class="container px-4 px-lg-5 mt-5">
+            <h2 class="fw-bolder mb-4">Productos relacionados</h2>
+
+            
+
+
+
+                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                     
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <a href="producto.html"><img class="card-img-top" src="../assets/img/tienda/batidora.png" alt="batidora" /></a>
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Batidora Artisan Hibiscus
+                                        </h5>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex justify-content-center small text-warning mb-2">
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                        </div>
+                                        <!-- Product price-->
+                                        $38.000
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="producto.html">Comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Sale badge-->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">50% OFF</div>
+                                <!-- Product image-->
+                                <a href="producto.html"><img class="card-img-top" src="../assets/img/tienda/platosceramica.png" alt="juego de vajilla" /></a>
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Juego de vajilla Jewels de Kew Living </h5>
+                                        <!-- Product price-->
+                                        <p>$13500</p>
+                                     </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Sale badge-->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">40% OFF</div>
+                                <!-- Product image-->
+                                <a href="producto.html">  <img class="card-img-top" src="../assets/img/tienda/ollagra.png" alt="olla le creuset " /></a>
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Olla especial Le Creuset 20 litros</h5>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex justify-content-center small text-warning mb-2">
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                        </div>
+                                        <!-- Product price--> <p>$4500</p>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="producto.html">Comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                     
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <a href="producto.html"><img class="card-img-top" src="../assets/img/tienda/aceite-oliva.webp" alt="aceite de oliva" /></a>
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Aceite de oliva variedad coupage</h5>
+                                        <!-- Product price-->
+                                        $450
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="producto.html">Comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                       
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                               <a href="producto.html"> <img class="card-img-top" src="../assets/img/tienda/LeCreuset_azul.webp" alt="aceite de oliva" /></a>
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Olla Le Creuset de hierro fundido 20 Litros</h5>
+                                        <!-- Product price-->
+                                        $7500
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="producto.html">Comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                               <a href="producto.html"> <img class="card-img-top" src="../assets/img/tienda/cuchillos.jpg" alt="cuchillos" /></a>
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Juego de cuchillos Zwilling Pro 3 piezas
+                                        </h5>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex justify-content-center small text-warning mb-2">
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                        </div>
+                                        <!-- Product price-->
+                                        $18.000
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="producto.html">Comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                   
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Sale badge-->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">40% OFF</div>
+                                <!-- Product image-->
+                                <a href="producto.html"><img class="card-img-top" src="../assets/img/tienda/ollagra.png" alt="olla le creuset" /></a>
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Olla especial Le Creuset 20 litros</h5>
+                                        <!-- Product reviews-->
+                                        <div class="d-flex justify-content-center small text-warning mb-2">
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                        </div>
+                                        <!-- Product price--> <p>$4500</p>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+    
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="producto.html">Comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Sale badge-->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">50% OFF</div>
+                                <!-- Product image-->
+                                <a href="producto.html"><img class="card-img-top" src="../assets/img/tienda/platosceramica.png" alt="juego de vajilla" /></a>
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">Juego de vajilla Jewels de Kew Living </h5>
+                                        <!-- Product price-->
+                                        <p>$13500</p>
+                                     </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="producto.html">Comprar</a></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    
+              
+
+
+        </div> </div>
+    </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Gastronomia 2024</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

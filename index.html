@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gastronomia, proyecto Monica Forrisi</title>
+        <!-- favicon  -->
+		<link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+        <!-- google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+       <!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+<!-- Core theme CSS (includes Bootstrap)-->
+        <link href="https://startbootstrap.github.io/startbootstrap-shop-homepage/css/styles.css" rel="stylesheet" />
+        <!-- main style -->
+
+<!-- main style -->
+<link rel="stylesheet" href="./css/styles.css"> 
+
+ </head>
+    <body><!-- control + k + c shortcut para  generar comentario en visual studio code -->
+        <aside></aside><!-- se usa para cosas externas no relacionadas con el sitio, ej publicidad -->
+      <!-- cabezal ini  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-secundario">
+            <div class="container py-2">
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.svg" class="logo" width="220"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 ">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="pages/tienda.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/categoria.html">Recetas</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="pages/tienda.html">Todos los productos</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="pages/tienda.html">Utensilios</a></li>
+                                <li><a class="dropdown-item" href="pages/tienda.html">Ollas y sartenes</a></li>
+                                <li><a class="dropdown-item" href="pages/tienda.html">Cuchillería</a></li>
+                                <li><a class="dropdown-item" href="pages/tienda.html">Recién llegados</a></li>
+                                <li><a class="dropdown-item" href="pages/tienda.html">Más vendidos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <div class="dosbotones">
+                            <a href="pages/receta.html">
+                                <a href="pages/categoria.html"><img src="assets/img/btn_recetasporseccion_1.svg" alt="recetas por seccion" width="180"></a> 
+                            <a href="pages/enviatureceta.html"><img src="assets/img/btn_buscador.svg" alt="buscador" width="180"></a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- cabezal fin  -->
+         
+         
+         <main>
+
+<!-- banner ini -->
+ <div class="container">
+<div class="row featurette bannerPpal">
+    <div class="col-md-7">
+        <div class="titular"><h1><strong>TEMPORADA</strong><br> DE CÍTRICOS</h1>
+            <p class="h2 text-colorSecundario margin-t-20"> Fuente natural de vitamina C, tan necesaria en invierno para combatir gripes y resfríos, los cítricos están en su temporada.</p>
+            <a class="arrow-link" href="pages/receta.html">Ver recetas<span class="arrow"></span></a></div>    </div>
+    <div class="col-md-5"><img src="assets/img/fondobanner2.png" alt="imagen de citricos" class="margin-t-20" width="100%">
+    </div>
+  </div>
+</div>
+ <!-- banner fin -->
+
+
+
+ <!-- carrousel 4 elementos ini-->
+ <section class="container mt-5 py-5">
+    <h2 class="heading"><strong>recomendados</strong> del chef</h2>
+
+    <div id="carouselExample" class="carousel slide">
+       <div class="carousel-inner">
+         <div class="carousel-item active">
+   <div class="d-lg-flex">
+       <div class="card">
+           <!-- Product image-->
+           <a href="pages/receta.html"><img class="card-img-top" src="assets/img/cheesecake.jpg" alt="batidora" /></a>
+           <!-- Product details-->
+           <div class="card-body p-3">
+               <div class="text-center">
+                   <!-- Product name-->
+                   <h5 class="fw-bolder">Cheesecake de frutos rojos                            </h5>
+                   <!-- Product reviews-->
+                   <div class="d-flex justify-content-center small text-warning mb-4">
+                       <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                           <i class="fa-solid fa-share-nodes"></i>
+                           <i class="fa-solid fa-bookmark"></i>
+                           </div>
+                   </div>
+                   <p  >Este postre cada vez más popular es de muy facil elaboracion. CasanCrem va con todo!</p>
+               
+               <div class="grid-recipe-dif mt-2">
+                   <div><i class="fa-regular fa-clock"></i>
+                       <br>30 minutos</div>
+                   <div><i class="fa-regular fa-user"></i>
+                       <br>4 personas</div>
+               </div>  </div>
+           </div>
+           <!-- Product actions-->
+                                  
+       </div>
+       <div class="card">
+           <!-- Product image-->
+           <a href="pages/receta.html"><img class="card-img-top" src="assets/img/crumble.jpg" alt="batidora" /></a>
+           <!-- Product details-->
+           <div class="card-body p-3">
+               <div class="text-center">
+                   <!-- Product name-->
+                   <h5 class="fw-bolder">Crumble de manzana                              </h5>
+                   <!-- Product reviews-->
+                   <div class="d-flex justify-content-center small text-warning mb-4">
+                       <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                           <i class="fa-solid fa-share-nodes"></i>
+                           <i class="fa-solid fa-bookmark"></i>
+                           </div>
+                   </div>
+                   <p  >Este postre cada vez más popular es de muy facil elaboracion. CasanCrem va con todo!</p>
+               
+               <div class="grid-recipe-dif mt-2">
+                   <div><i class="fa-regular fa-clock"></i>
+                       <br>30 minutos</div>
+                   <div><i class="fa-regular fa-user"></i>
+                       <br>4 personas</div>
+               </div>  </div>
+           </div>
+           <!-- Product actions-->
+                                  
+       </div>
+       <div class="card">
+           <!-- Product image-->
+           <a href="pages/receta.html"><img class="card-img-top" src="assets/img/limonada.jpg" alt="batidora" /></a>
+           <!-- Product details-->
+           <div class="card-body p-3">
+               <div class="text-center">
+                   <!-- Product name-->
+                   <h5 class="fw-bolder">Limonada de menta, jengibre y kiwi                          </h5>
+                   <!-- Product reviews-->
+                   <div class="d-flex justify-content-center small text-warning mb-4">
+                       <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                           <i class="fa-solid fa-share-nodes"></i>
+                           <i class="fa-solid fa-bookmark"></i>
+                           </div>
+                   </div>
+                   <p  >Este postre cada vez más popular es de muy facil elaboracion. CasanCrem va con todo!</p>
+               
+               <div class="grid-recipe-dif mt-2">
+                   <div><i class="fa-regular fa-clock"></i>
+                       <br>30 minutos</div>
+                   <div><i class="fa-regular fa-user"></i>
+                       <br>4 personas</div>
+               </div>  </div>
+           </div>
+           <!-- Product actions-->
+                                  
+       </div>
+       <div class="card">
+           <!-- Product image-->
+           <a href="pages/receta.html"><img class="card-img-top" src="assets/img/sopa.jpg" alt="batidora" /></a>
+           <!-- Product details-->
+           <div class="card-body p-3">
+               <div class="text-center">
+                   <!-- Product name-->
+                   <h5 class="fw-bolder">Sopa de calabaza y espinaca                            </h5>
+                   <!-- Product reviews-->
+                   <div class="d-flex justify-content-center small text-warning mb-4">
+                       <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                           <i class="fa-solid fa-share-nodes"></i>
+                           <i class="fa-solid fa-bookmark"></i>
+                           </div>
+                   </div>
+                   <p  >Este postre cada vez más popular es de muy facil elaboracion. CasanCrem va con todo!</p>
+               
+               <div class="grid-recipe-dif mt-2">
+                   <div><i class="fa-regular fa-clock"></i>
+                       <br>30 minutos</div>
+                   <div><i class="fa-regular fa-user"></i>
+                       <br>4 personas</div>
+               </div>  </div>
+           </div>
+           <!-- Product actions-->
+                                  
+       </div>
+   </div>
+   
+       </div>
+         <div class="carousel-item">
+           <div class="d-lg-flex d-xxl-flex">
+       <div class="card">
+                   <!-- Product image-->
+                   <a href="pages/receta.html"><img class="card-img-top" src="assets/img/licuado.jpg" alt="batidora" /></a>
+                   <!-- Product details-->
+                   <div class="card-body p-3">
+                       <div class="text-center">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder">Licuado de frambuesa y limón                             </h5>
+                           <!-- Product reviews-->
+                           <div class="d-flex justify-content-center small text-warning mb-4">
+                               <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                                   <i class="fa-solid fa-share-nodes"></i>
+                                   <i class="fa-solid fa-bookmark"></i>
+                                   </div>
+                           </div>
+                           <p  >Este postre cada vez más popular es de muy facil elaboracion. CasanCrem va con todo!</p>
+                       
+                       <div class="grid-recipe-dif mt-2">
+                           <div><i class="fa-regular fa-clock"></i>
+                               <br>30 minutos</div>
+                           <div><i class="fa-regular fa-user"></i>
+                               <br>4 personas</div>
+                       </div>  </div>
+                   </div>
+                   <!-- Product actions-->
+                                          
+               </div>
+               
+               <div class="card d-sm-none">
+                   <!-- Product image-->
+                   <a href="pages/receta.html"><img class="card-img-top" src="assets/img/risotto.jpg" alt="batidora" /></a>
+                   <!-- Product details-->
+                   <div class="card-body p-3">
+                       <div class="text-center">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder">Risotto de calabaza y vegetales                       </h5>
+                           <!-- Product reviews-->
+                           <div class="d-flex justify-content-center small text-warning mb-4">
+                               <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                                   <i class="fa-solid fa-share-nodes"></i>
+                                   <i class="fa-solid fa-bookmark"></i>
+                                   </div>
+                           </div>
+                           <p  >Este postre cada vez más popular es de muy facil elaboracion. CasanCrem va con todo!</p>
+                       
+                       <div class="grid-recipe-dif mt-2">
+                           <div><i class="fa-regular fa-clock"></i>
+                               <br>30 minutos</div>
+                           <div><i class="fa-regular fa-user"></i>
+                               <br>4 personas</div>
+                       </div>  </div>
+                   </div>
+                   <!-- Product actions-->
+                                          
+               </div>
+               <div class="card d-sm-none">
+                   <!-- Product image-->
+                   <a href="pages/receta.html"><img class="card-img-top" src="assets/img/guacamole.jpg" alt="batidora" /></a>
+                   <!-- Product details-->
+                   <div class="card-body p-3">
+                       <div class="text-center">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder">Guacamole, el clásico dip                            </h5>
+                           <!-- Product reviews-->
+                           <div class="d-flex justify-content-center small text-warning mb-4">
+                               <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                                   <i class="fa-solid fa-share-nodes"></i>
+                                   <i class="fa-solid fa-bookmark"></i>
+                                   </div>
+                           </div>
+                           <p  >Este postre cada vez más popular es de muy facil elaboracion. CasanCrem va con todo!</p>
+                       
+                       <div class="grid-recipe-dif mt-2">
+                           <div><i class="fa-regular fa-clock"></i>
+                               <br>30 minutos</div>
+                           <div><i class="fa-regular fa-user"></i>
+                               <br>4 personas</div>
+                       </div>  </div>
+                   </div>
+                   <!-- Product actions-->
+                                          
+               </div>
+               <div class="card d-sm-none">
+                   <!-- Product image-->
+                   <a href="pages/receta.html"><img class="card-img-top" src="assets/img/limonada.jpg" alt="batidora" /></a>
+                   <!-- Product details-->
+                   <div class="card-body p-3">
+                       <div class="text-center">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder">Limonada de menta y kiwi                          </h5>
+                           <!-- Product reviews-->
+                           <div class="d-flex justify-content-center small text-warning mb-4">
+                               <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                                   <i class="fa-solid fa-share-nodes"></i>
+                                   <i class="fa-solid fa-bookmark"></i>
+                                   </div>
+                           </div>
+                           <p  >Este postre cada vez más popular es de muy facil elaboracion. CasanCrem va con todo!</p>
+                       
+                       <div class="grid-recipe-dif mt-2">
+                           <div><i class="fa-regular fa-clock"></i>
+                               <br>30 minutos</div>
+                           <div><i class="fa-regular fa-user"></i>
+                               <br>4 personas</div>
+                       </div>  </div>
+                   </div>
+                   <!-- Product actions-->
+                                          
+               </div>
+             
+           </div>
+       </div>
+         <div class="carousel-item">
+           <div class="d-lg-flex">
+            <div class="card d-sm-none">
+                <!-- Product image-->
+                <a href="pages/receta.html"><img class="card-img-top" src="assets/img/sopa.jpg" alt="batidora" /></a>
+                <!-- Product details-->
+                <div class="card-body p-3">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Sopa de calabaza y espinaca                            </h5>
+                        <!-- Product reviews-->
+                        <div class="d-flex justify-content-center small text-warning mb-4">
+                            <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <i class="fa-solid fa-bookmark"></i>
+                                </div>
+                        </div>
+                        <p  >Este postre cada vez más popular es de muy facil elaboracion. CasanCrem va con todo!</p>
+                    
+                    <div class="grid-recipe-dif mt-2">
+                        <div><i class="fa-regular fa-clock"></i>
+                            <br>30 minutos</div>
+                        <div><i class="fa-regular fa-user"></i>
+                            <br>4 personas</div>
+                    </div>  </div>
+                </div>
+                <!-- Product actions-->
+                                       
+            </div>
+               <div class="card d-sm-none">
+                   <!-- Product image-->
+                   <a href="pages/receta.html"><img class="card-img-top" src="assets/img/cheesecake.jpg" alt="batidora" /></a>
+                   <!-- Product details-->
+                   <div class="card-body p-3">
+                       <div class="text-center">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder">Cheesecake de frutos rojos                            </h5>
+                           <!-- Product reviews-->
+                           <div class="d-flex justify-content-center small text-warning mb-4">
+                               <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                                   <i class="fa-solid fa-share-nodes"></i>
+                                   <i class="fa-solid fa-bookmark"></i>
+                                   </div>
+                           </div>
+                           <p  >Este postre cada vez más popular es de muy facil elaboracion. CasanCrem va con todo!</p>
+                       
+                       <div class="grid-recipe-dif mt-2">
+                           <div><i class="fa-regular fa-clock"></i>
+                               <br>30 minutos</div>
+                           <div><i class="fa-regular fa-user"></i>
+                               <br>4 personas</div>
+                       </div>  </div>
+                   </div>
+                   <!-- Product actions-->
+                                          
+               </div>
+               <div class="card d-sm-none">
+                   <!-- Product image-->
+                   <a href="pages/receta.html"><img class="card-img-top" src="assets/img/limonada.jpg" alt="batidora" /></a>
+                   <!-- Product details-->
+                   <div class="card-body p-3">
+                       <div class="text-center">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder">Limonada de menta y kiwi                          </h5>
+                           <!-- Product reviews-->
+                           <div class="d-flex justify-content-center small text-warning mb-4">
+                               <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                                   <i class="fa-solid fa-share-nodes"></i>
+                                   <i class="fa-solid fa-bookmark"></i>
+                                   </div>
+                           </div>
+                           <p  >Este postre cada vez más popular es de muy facil elaboracion. CasanCrem va con todo!</p>
+                       
+                       <div class="grid-recipe-dif mt-2">
+                           <div><i class="fa-regular fa-clock"></i>
+                               <br>30 minutos</div>
+                           <div><i class="fa-regular fa-user"></i>
+                               <br>4 personas</div>
+                       </div>  </div>
+                   </div>
+                   <!-- Product actions-->
+                                          
+               </div>
+               <div class="card">
+                   <!-- Product image-->
+                   <a href="pages/receta.html"><img class="card-img-top" src="assets/img/pollo.jpg" alt="batidora" /></a>
+                   <!-- Product details-->
+                   <div class="card-body p-3">
+                       <div class="text-center">
+                           <!-- Product name-->
+                           <h5 class="fw-bolder">Pollo con vegetales al estilo chino                           </h5>
+                           <!-- Product reviews-->
+                           <div class="d-flex justify-content-center small text-warning mb-4">
+                               <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                                   <i class="fa-solid fa-share-nodes"></i>
+                                   <i class="fa-solid fa-bookmark"></i>
+                                   </div>
+                           </div>
+                           <p  >Este postre cada vez más popular es de muy facil elaboracion. CasanCrem va con todo!</p>
+                       
+                       <div class="grid-recipe-dif mt-2">
+                           <div><i class="fa-regular fa-clock"></i>
+                               <br>30 minutos</div>
+                           <div><i class="fa-regular fa-user"></i>
+                               <br>4 personas</div>
+                       </div>  </div>
+                   </div>
+                   <!-- Product actions-->
+                                          
+               </div>
+           </div>      
+       </div>
+       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+       </button>
+       <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+       </button>
+     </div>
+   </section>
+   <!-- carrousel 4 elementso fin -->
+   
+   
+
+ <!-- SUSCRIBE ini --> 
+<section>
+    <div class="grid-suscribir">
+        <div class="suscribir-item col1"><img src="assets/img/sopa.jpg"></div>
+        <div class="suscribir-item col2"><img src="assets/img/tomate.jpg"></div>
+        <div class="suscribir-item col3"><img src="assets/img/cheesecake.jpg"></div>
+        <div class="suscribir-item col4"><img src="assets/img/crumble.jpg"></div>
+        <div class="suscribir-item col5"><img src="assets/img/guacamole.jpg"></div>
+        <div class="suscribir-item col6"><img src="assets/img/licuado.jpg"></div>
+        <div class="suscribir-item col7"><img src="assets/img/banan.jpg"></div>
+        <div class="suscribir-item col8"><img src="assets/img/ensalada.jpg"></div>
+         <div class="suscribir-item grande"><p class="h3"><strong>Recibí en tu mail</strong>  <br>
+            recetas, reseñas y recomendaciones del mundo foodie<br> <br>
+            <button href="#">Suscribite</button> </p></div>
+
+    </div>
+
+</section>
+ <!-- SUSCRIBE fin --> 
+
+
+ <!-- recetas por categoria  ini --> 
+<section class="container">            
+    <h2 class="heading"><strong>recetas</strong> por categoría</h2>
+<div class="grid-categoria">
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_frutas.svg"></div>Frutas</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_carnes.svg"></div>Carnes</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_bebidas.svg"></div>Bebidas</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_ensaladas.svg"></div>Ensaladas</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_dulces.svg"></div>Postres y golosinas</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_light.svg"></div>Recetas light</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_guisos.svg"></div>Guisos y cazuelas</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_bebes.svg"></div>Para bebés</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_sinazucar.svg"></div>Sin azúcar</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_sopas.svg"></div>Sopas</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_desayunos.svg"></div>Desayunos y meriendas</div>
+        <div class="categoria-item"><div class="fondo"><img src="assets/img/ico_utiles.svg"></div>Utiles</div>
+</div>
+</section>
+ <!-- recetas por categoria  fin --> 
+
+
+
+ <!-- cards ini --> 
+ <section class="bloque3cards">
+    <div class="container">                     
+        <h2 class="heading">de <strong>estación</strong> </h2>
+
+        <div class="row gx-4 gx-lg-4 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+            <div class="col mb-5">
+                <div class="card">
+                    <!-- Product image-->
+                    <a href="pages/receta.html"><img class="card-img-top" src="assets/img/cheesecake.jpg" alt="batidora" /></a>
+                    <!-- Product details-->
+                    <div class="card-body p-3">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Cheesecake de frutos rojos                            </h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-4">
+                                <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-bookmark"></i>
+                                    </div>
+                            </div>
+                            <p  >Este postre cada vez más popular es de muy facil elaboracion. CasanCrem va con todo!</p>
+                        
+                        <div class="grid-recipe-dif mt-2">
+                            <div><i class="fa-regular fa-clock"></i>
+                                <br>30 minutos</div>
+                            <div><i class="fa-regular fa-user"></i>
+                                <br>4 personas</div>
+                        </div>  </div>
+                    </div>
+                    <!-- Product actions-->
+                                           
+                </div>
+            </div>
+
+            <div class="col mb-5">
+                <div class="card">
+                    <!-- Product image-->
+                    <a href="pages/receta.html"><img class="card-img-top" src="assets/img/risotto.jpg" alt="batidora" /></a>
+                    <!-- Product details-->
+                    <div class="card-body p-3">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Risotto de calabaza y vegetales
+                            </h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-4">
+                                <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-bookmark"></i>
+                                    </div>
+                            </div>
+                            <p  >El clásico italiano admite mil variantes y por eso se gana siempre un lugar en la mesa.</p>
+                        
+                        <div class="grid-recipe-dif mt-2">
+                            <div><i class="fa-regular fa-clock"></i>
+                                <br>30 minutos</div>
+                            <div><i class="fa-regular fa-user"></i>
+                                <br>4 personas</div>
+                        </div>  </div>
+                    </div>
+                    <!-- Product actions-->
+                                           
+                </div>
+            </div>
+
+            <div class="col mb-5">
+                <div class="card">
+                    <!-- Product image-->
+                    <a href="pages/receta.html"><img class="card-img-top" src="assets/img/ensalada.jpg" alt="batidora" /></a>
+                    <!-- Product details-->
+                    <div class="card-body p-3">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Ensalada de verdes con remolacha
+                            </h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-4">
+                                <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-bookmark"></i>
+                                    </div>
+                            </div>
+                            <p  >El clásico italiano admite mil variantes y por eso se gana siempre un lugar en la mesa.</p>
+                        
+                        <div class="grid-recipe-dif mt-2">
+                            <div><i class="fa-regular fa-clock"></i>
+                                <br>30 minutos</div>
+                            <div><i class="fa-regular fa-user"></i>
+                                <br>4 personas</div>
+                        </div>  </div>
+                    </div>
+                    <!-- Product actions-->
+                                           
+                </div>
+            </div>
+          
+         
+            <div class="col mb-5">
+                <div class="card">
+                    <!-- Product image-->
+                    <a href="pages/receta.html"><img class="card-img-top" src="assets/img/limonada.jpg" alt="batidora" /></a>
+                    <!-- Product details-->
+                    <div class="card-body p-3">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Limonada de jengibre menta y kiwi
+                            </h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-4">
+                                <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-bookmark"></i>
+                                    </div>
+                            </div>
+                            <p  >El clásico italiano admite mil variantes y por eso se gana siempre un lugar en la mesa.</p>
+                        
+                        <div class="grid-recipe-dif mt-2">
+                            <div><i class="fa-regular fa-clock"></i>
+                                <br>30 minutos</div>
+                            <div><i class="fa-regular fa-user"></i>
+                                <br>4 personas</div>
+                        </div>  </div>
+                    </div>
+                    <!-- Product actions-->
+                                           
+                </div>
+            </div>
+          
+           
+            <div class="col mb-5">
+                <div class="card">
+                    <!-- Product image-->
+                    <a href="pages/receta.html"><img class="card-img-top" src="assets/img/sopa.jpg" alt="batidora" /></a>
+                    <!-- Product details-->
+                    <div class="card-body p-3">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Sopa de calabaza y zanahoria
+
+                            </h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-4">
+                                <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-bookmark"></i>
+                                    </div>
+                            </div>
+                            <p  >El clásico italiano admite mil variantes y por eso se gana siempre un lugar en la mesa.</p>
+                        
+                        <div class="grid-recipe-dif mt-2">
+                            <div><i class="fa-regular fa-clock"></i>
+                                <br>30 minutos</div>
+                            <div><i class="fa-regular fa-user"></i>
+                                <br>4 personas</div>
+                        </div>  </div>
+                    </div>
+                    <!-- Product actions-->
+                                           
+                </div>
+            </div>
+
+            <div class="col mb-5">
+                <div class="card">
+                    <!-- Product image-->
+                    <a href="pages/receta.html"><img class="card-img-top" src="assets/img/licuado.jpg" alt="batidora" /></a>
+                    <!-- Product details-->
+                    <div class="card-body p-3">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Licuado de frutillas y frambuesas
+
+
+                            </h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-4">
+                                <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-bookmark"></i>
+                                    </div>
+                            </div>
+                            <p  >El clásico italiano admite mil variantes y por eso se gana siempre un lugar en la mesa.</p>
+                        
+                        <div class="grid-recipe-dif mt-2">
+                            <div><i class="fa-regular fa-clock"></i>
+                                <br>30 minutos</div>
+                            <div><i class="fa-regular fa-user"></i>
+                                <br>4 personas</div>
+                        </div>  </div>
+                    </div>
+                    <!-- Product actions-->
+                                           
+                </div>
+            </div>
+
+
+
+       
+            <div class="col mb-5">
+                <div class="card">
+                    <!-- Product image-->
+                    <a href="pages/receta.html"><img class="card-img-top" src="assets/img/guacamole.jpg" alt="batidora" /></a>
+                    <!-- Product details-->
+                    <div class="card-body p-3">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Guacamole
+                            </h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-4">
+                                <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-bookmark"></i>
+                                    </div>
+                            </div>
+                            <p  >El clásico italiano admite mil variantes y por eso se gana siempre un lugar en la mesa.</p>
+                        
+                        <div class="grid-recipe-dif mt-2">
+                            <div><i class="fa-regular fa-clock"></i>
+                                <br>30 minutos</div>
+                            <div><i class="fa-regular fa-user"></i>
+                                <br>4 personas</div>
+                        </div>  </div>
+                    </div>
+                    <!-- Product actions-->
+                                           
+                </div>
+            </div>
+
+            <div class="col mb-5">
+                <div class="card">
+                    <!-- Product image-->
+                    <a href="pages/receta.html"><img class="card-img-top" src="assets/img/crumble.jpg" alt="batidora" /></a>
+                    <!-- Product details-->
+                    <div class="card-body p-3">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Crumble de manzana
+
+                            </h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-4">
+                                <div class="grid-recipe-icons text-colorTerciario margin-t-20"> <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                    <i class="fa-solid fa-bookmark"></i>
+                                    </div>
+                            </div>
+                            <p  >El clásico italiano admite mil variantes y por eso se gana siempre un lugar en la mesa.</p>
+                        
+                        <div class="grid-recipe-dif mt-2">
+                            <div><i class="fa-regular fa-clock"></i>
+                                <br>30 minutos</div>
+                            <div><i class="fa-regular fa-user"></i>
+                                <br>4 personas</div>
+                        </div>  </div>
+                    </div>
+                    <!-- Product actions-->
+                                           
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+ <!-- cards fin --> 
+
+
+<!-- count up  ini --> 
+<section class="bgcounter mt-5">
+    <div class="row counter-section text-center">
+        <div id="counter1" class="counter col-lg-4">0</div>
+        <div id="counter2" class="counter col-lg-4">0</div>
+        <div id="counter3" class="counter col-lg-4">0</div>
+    </div></section>
+ <!-- count up  fin -->
+  
+ 
+ 
+          
+        </main>
+
+        <footer>
+            <div class="container ">
+              <div class="footer2cols">  
+                <div>  <ul>
+                    <li><a href="#">Quiénes somos</a></li> 
+                    <li><a href="pages/categoria.html">Recetas</a></li>
+                    <li><a href="pages/enviatureceta.html">Buscador</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="pages/enviatureceta.html">Envianos tu receta</a></li>
+                    <li><a href="pages/receta.html">Videos</a></li></ul></div>
+                    <div><h4>Seguinos en&nbsp;&nbsp; <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                      &nbsp;&nbsp;  <a href=""><i class="fa-brands fa-x"></i></a>  &nbsp;&nbsp;  
+                      <a href=""><i class="fa-brands fa-instagram"></i></a>&nbsp;&nbsp; 
+                      
+                      <a href=""><i class="fa-brands fa-youtube"></i></a>&nbsp;&nbsp; 
+                      <a href=""><i class="fa-brands fa-tiktok"></i></a>&nbsp;&nbsp; 
+
+                      <a href=""><i class="fa-brands fa-twitch"></i></a>
+
+                    </h4></div>
+        </div>
+        
+                <hr class="margin-t-20">
+        <p class="small margin-t-20">Copyright Derechos reservados. Mónica Forrisi / Coderhouse</p>
+        
+    </div>
+
+            
+            
+            </footer>
+       
+          <!-- Bootstrap core JS-->
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>    
+        
+          <script src="scripts/script.js"></script>
+
+    </body>
+</html>

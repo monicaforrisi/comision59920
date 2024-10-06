@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gastronomia, proyecto Monica Forrisi</title>
+        <!-- favicon  -->
+		<link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+        <!-- google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+       <!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+<!-- Core theme CSS (includes Bootstrap)-->
+        <link href="https://startbootstrap.github.io/startbootstrap-shop-homepage/css/styles.css" rel="stylesheet" />
+        <!-- main style -->
+
+<!-- main style -->
+<link rel="stylesheet" href="../css/styles.css"> 
+
+ </head>
+    <body><!-- control + k + c shortcut para  generar comentario en visual studio code -->
+        <aside></aside><!-- se usa para cosas externas no relacionadas con el sitio, ej publicidad -->
+      <!-- cabezal ini  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-secundario">
+            <div class="container py-2">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo.svg" class="logo" width="220"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 ">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="tienda.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="categoria.html">Recetas</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="tienda.html">Todos los productos</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="tienda.html">Utensilios</a></li>
+                                <li><a class="dropdown-item" href="tienda.html">Ollas y sartenes</a></li>
+                                <li><a class="dropdown-item" href="tienda.html">Cuchillería</a></li>
+                                <li><a class="dropdown-item" href="tienda.html">Recién llegados</a></li>
+                                <li><a class="dropdown-item" href="tienda.html">Más vendidos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <div class="dosbotones">
+                            <a href="receta.html">
+                                <a href="categoria.html"><img src="../assets/img/btn_recetasporseccion_1.svg" alt="recetas por seccion" width="180"></a> 
+                            <a href="enviatureceta.html"><img src="../assets/img/btn_buscador.svg" alt="buscador" width="180"></a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- cabezal fin  -->
+         
+         
+         <main>
+<!-- receta  ini -->
+<section class="bg-dark py-5 fondobanner_cat">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+             <h1 class="heading text-white tituloppal">ENVIA TU<BR><strong>RECETA </strong> </h1>
+
+             
+        </div>
+    </div>
+</section>    
+<!-- receta fin -->
+
+
+<!-- form  ini --> 
+<section class="container py-5">                     
+ <h2>Envianos tu receta, la publicaremos y la más valorada del mes se gana una orden de compra en la tienda de Gastronomia!</h2>
+ <form>
+    <div class="mb-5 mt-5">
+      <label for="exampleInputEmail1" class="form-label">Tu <strong>correo electrónico</strong></label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text text-body-tertiary">Este dato es privado, no se compartirá en ningún momento.</div>
+    </div>
+    <div class="mb-5 mt-5">
+      <label for="exampleInputPassword1" class="form-label"><strong>Tu nombre</strong> </label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    
+    <div class="mb-5 mt-5">
+        <label for="exampleFormControlTextarea1" class="form-label"><strong>Envianos tu receta,</strong> detallando lo mejor que puedas cantidades y procedimiento de elaboración</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+      <div class="mb-5 mt-5">
+        <label for="exampleFormControlTextarea1" class="form-label">Elegí tu <strong>perfil:</strong></label>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Soy cocinero/a profesional
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Soy un apasionado amateur
+            </label>
+          </div>
+      </div>
+
+    <button type="submit" class="mt-2 btn btn-lg btn-primary">Envianos tu receta</button>
+  </form>
+    </div>
+</section>
+<!-- form  fin -->
+ 
+
+
+ <!-- carrousel  ini-->
+ <section class="container py-5">
+    <h2 class="heading">las recetas más <strong>valoradas</strong> </h2>
+    <div id="carouselExampleControls" class="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="card h-100">
+                <!-- Product image-->
+                <a href="receta.html"><img class="card-img-top" src="../assets/img/cheesecake.jpg" alt="batidora" /></a>
+                <!-- Product details-->
+                <div class="card-body p-3">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Cheesecake de frutos rojos                            </h5>
+                        <!-- Product reviews-->
+                        <div class="d-flex justify-content-center small text-warning mb-4">
+                            <div class="grid-recipe-icons text-colorTerciario margin-t-20"> 
+                                <i class="fa-solid fa-heart"></i>
+                               <span class="text-colorSecundario">160 valoraciones</span> 
+                                </div>
+                        </div>
+                        <p>Receta facil de preparar, rica y económica. Rinde 10 porciones <br></p>
+                        <p class="text-colorSecundario pt-3"><i class="fa-regular fa-user"></i>
+                            <br>Enviada por <strong>María C</strong>, Punta del Este</p>
+                    
+                </div>
+                                        
+            </div>
+        </div></div>
+        <div class="carousel-item">
+            <div class="card h-100">
+                <!-- Product image-->
+                <a href="receta.html"><img class="card-img-top" src="../assets/img/risotto.jpg" alt="batidora" /></a>
+                <!-- Product details-->
+                <div class="card-body p-3">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Risotto de calabaza y vegetales
+                        </h5>
+                        <!-- Product reviews-->
+                        <div class="d-flex justify-content-center small text-warning mb-4">
+                            <div class="grid-recipe-icons text-colorTerciario margin-t-20"> 
+                                <i class="fa-solid fa-heart"></i>
+                               <span class="text-colorSecundario">90 valoraciones</span> 
+                                </div>
+                        </div>
+                        <p>Receta facil de preparar, rica y económica. Rinde 10 porciones <br></p>
+                        <p class="text-colorSecundario pt-3"><i class="fa-regular fa-user"></i>
+                            <br>Enviada por <strong>Pablo</strong>, CABA</p>
+                      </div>
+                </div>
+                <!-- Product actions-->
+                                       
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card h-100">
+                <!-- Product image-->
+                <a href="receta.html"><img class="card-img-top" src="../assets/img/ensalada.jpg" alt="batidora" /></a>
+                <!-- Product details-->
+                <div class="card-body p-3">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Ensalada de verdes con remolacha
+                        </h5>
+                        <!-- Product reviews-->
+                        <div class="d-flex justify-content-center small text-warning mb-4">
+                            <div class="grid-recipe-icons text-colorTerciario margin-t-20"> 
+                                <i class="fa-solid fa-heart"></i>
+                               <span class="text-colorSecundario">80 valoraciones</span> 
+                                </div>
+                        </div>
+                        <p>Receta facil de preparar, rica y económica. Rinde 10 porciones <br></p>
+                        <p class="text-colorSecundario pt-3"><i class="fa-regular fa-user"></i>
+                            <br>Enviada por <strong>María C</strong>, Punta del Este</p>
+                      </div>
+                </div>
+                <!-- Product actions-->
+                                       
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card h-100">
+                <!-- Product image-->
+                <a href="receta.html"><img class="card-img-top" src="../assets/img/limonada.jpg" alt="batidora" /></a>
+                <!-- Product details-->
+                <div class="card-body p-3">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Limonada de jengibre menta y kiwi
+                        </h5>
+                      <!-- Product reviews-->
+                      <div class="d-flex justify-content-center small text-warning mb-4">
+                        <div class="grid-recipe-icons text-colorTerciario margin-t-20"> 
+                            <i class="fa-solid fa-heart"></i>
+                           <span class="text-colorSecundario">160 valoraciones</span> 
+                            </div>
+                    </div>
+                    <p>Receta facil de preparar, rica y económica. Rinde 10 porciones <br></p>
+                    <p class="text-colorSecundario pt-3"><i class="fa-regular fa-user"></i>
+                        <br>Enviada por <strong>María C</strong>, Punta del Este</p>
+                 </div>
+                </div>
+                <!-- Product actions-->
+                                       
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card h-100">
+                <!-- Product image-->
+                <a href="receta.html"><img class="card-img-top" src="../assets/img/sopa.jpg" alt="batidora" /></a>
+                <!-- Product details-->
+                <div class="card-body p-3">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Sopa de calabaza y zanahoria
+
+                        </h5>
+                        <!-- Product reviews-->
+                        <div class="d-flex justify-content-center small text-warning mb-4">
+                            <div class="grid-recipe-icons text-colorTerciario margin-t-20"> 
+                                <i class="fa-solid fa-heart"></i>
+                               <span class="text-colorSecundario">160 valoraciones</span> 
+                                </div>
+                        </div>
+                        <p>Receta facil de preparar, rica y económica. Rinde 10 porciones <br></p>
+                        <p class="text-colorSecundario pt-3"><i class="fa-regular fa-user"></i>
+                            <br>Enviada por <strong>María C</strong>, Punta del Este</p>
+                      </div>
+                </div>
+                <!-- Product actions-->
+                                       
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card h-100">
+                <!-- Product image-->
+                <a href="receta.html"><img class="card-img-top" src="../assets/img/licuado.jpg" alt="batidora" /></a>
+                <!-- Product details-->
+                <div class="card-body p-3">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Licuado de frutillas y frambuesas
+
+
+                        </h5>
+                        <!-- Product reviews-->
+                        <div class="d-flex justify-content-center small text-warning mb-4">
+                            <div class="grid-recipe-icons text-colorTerciario margin-t-20"> 
+                                <i class="fa-solid fa-heart"></i>
+                               <span class="text-colorSecundario">160 valoraciones</span> 
+                                </div>
+                        </div>
+                        <p>Receta facil de preparar, rica y económica. Rinde 10 porciones <br></p>
+                        <p class="text-colorSecundario pt-3"><i class="fa-regular fa-user"></i>
+                            <br>Enviada por <strong>María C</strong>, Punta del Este</p>
+                      </div>
+                </div>
+                <!-- Product actions-->
+                                       
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card h-100">
+                <!-- Product image-->
+                <a href="receta.html"><img class="card-img-top" src="../assets/img/guacamole.jpg" alt="batidora" /></a>
+                <!-- Product details-->
+                <div class="card-body p-3">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Guacamole
+                        </h5>
+                        <!-- Product reviews-->
+                        <div class="d-flex justify-content-center small text-warning mb-4">
+                            <div class="grid-recipe-icons text-colorTerciario margin-t-20"> 
+                                <i class="fa-solid fa-heart"></i>
+                               <span class="text-colorSecundario">160 valoraciones</span> 
+                                </div>
+                        </div>
+                        <p>Receta facil de preparar, rica y económica. Rinde 10 porciones <br></p>
+                        <p class="text-colorSecundario pt-3"><i class="fa-regular fa-user"></i>
+                            <br>Enviada por <strong>María C</strong>, Punta del Este</p>
+                      </div>
+                </div>
+                <!-- Product actions-->
+                                       
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card h-100">
+                <!-- Product image-->
+                <a href="receta.html"><img class="card-img-top" src="../assets/img/crumble.jpg" alt="batidora" /></a>
+                <!-- Product details-->
+                <div class="card-body p-3">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Crumble de manzana
+
+                        </h5>
+                        <!-- Product reviews-->
+                        <div class="d-flex justify-content-center small text-warning mb-4">
+                            <div class="grid-recipe-icons text-colorTerciario margin-t-20"> 
+                                <i class="fa-solid fa-heart"></i>
+                               <span class="text-colorSecundario">160 valoraciones</span> 
+                                </div>
+                        </div>
+                        <p>Receta facil de preparar, rica y económica. Rinde 10 porciones <br></p>
+                        <p class="text-colorSecundario pt-3"><i class="fa-regular fa-user"></i>
+                            <br>Enviada por <strong>María C</strong>, Punta del Este</p>
+                     </div>
+                </div>
+                <!-- Product actions-->
+                                       
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="card h-100">
+                <!-- Product image-->
+                <a href="receta.html"><img class="card-img-top" src="../assets/img/tomate.jpg" alt="batidora" /></a>
+                <!-- Product details-->
+                <div class="card-body p-3">
+                    <div class="text-center">
+                        <!-- Product name-->
+                        <h5 class="fw-bolder">Pollo al estilo chino con vegetales
+
+                        </h5>
+                       <!-- Product reviews-->
+                       <div class="d-flex justify-content-center small text-warning mb-4">
+                        <div class="grid-recipe-icons text-colorTerciario margin-t-20"> 
+                            <i class="fa-solid fa-heart"></i>
+                           <span class="text-colorSecundario">160 valoraciones</span> 
+                            </div>
+                    </div>
+                    <p>Receta facil de preparar, rica y económica. Rinde 10 porciones <br></p>
+                    <p class="text-colorSecundario pt-3"><i class="fa-regular fa-user"></i>
+                        <br>Enviada por <strong>María C</strong>, Punta del Este</p>
+                  </div>
+                </div>
+                <!-- Product actions-->
+                                       
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div></section>
+<!-- carrousel   fin -->
+
+
+<!-- count up  ini --> 
+<section class="bgcounter mt-5">
+    <div class="row counter-section text-center">
+        <div id="counter1" class="counter col-lg-4">0</div>
+        <div id="counter2" class="counter col-lg-4">0</div>
+        <div id="counter3" class="counter col-lg-4">0</div>
+    </div></section>
+ <!-- count up  fin -->
+  
+ 
+ 
+          
+        </main>
+
+        <footer>
+            <div class="container ">
+              <div class="footer2cols">  
+                <div>  <ul>
+                    <li><a href="./pages/cocineros.html">Quiénes somos</a></li> 
+                    <li><a href="./pages/categoria.html">Recetas</a></li>
+                    <li><a href="#">Buscador</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="./pages/enviatureceta.html">Envianos tu receta</a></li>
+                    <li><a href="./receta.html">Videos</a></li></ul></div>
+                    <div><h4>Seguinos en&nbsp;&nbsp; <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                      &nbsp;&nbsp;  <a href=""><i class="fa-brands fa-x"></i></a>  &nbsp;&nbsp;  
+                      <a href=""><i class="fa-brands fa-instagram"></i></a>&nbsp;&nbsp; 
+                      
+                      <a href=""><i class="fa-brands fa-youtube"></i></a>&nbsp;&nbsp; 
+                      <a href=""><i class="fa-brands fa-tiktok"></i></a>&nbsp;&nbsp; 
+
+                      <a href=""><i class="fa-brands fa-twitch"></i></a>
+
+                    </h4></div>
+        </div>
+        
+                <hr class="margin-t-20">
+        <p class="small margin-t-20">Copyright Derechos reservados. Mónica Forrisi / Coderhouse</p>
+        
+    </div>
+
+            
+            
+            </footer>
+       
+          <!-- Bootstrap core JS-->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+        
+          <script src="../scripts/script.js"></script>
+
+    </body>
+</html>
